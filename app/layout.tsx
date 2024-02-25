@@ -1,3 +1,13 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2024-02-25 21:30:48
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2024-02-25 23:35:22
+ * @FilePath: /frontend-nav/app/layout.tsx
+ * @Description:
+ *
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved.
+ */
 import "@/styles/globals.css"
 import { Metadata } from "next"
 
@@ -19,9 +29,14 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://img.techrk1688.eu.org/file/7c62adaced7e805fb9d4e.png",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: "https://img.techrk1688.eu.org/file/1366731e13b3bc1da508f.png",
   },
 }
 
